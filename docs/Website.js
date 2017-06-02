@@ -40,7 +40,7 @@ function onGetCityButton() {
 	xmlHttpRequest.onreadystatechange = function() {
 		alert("readystate" + xmlHttpRequest.readyState);
 		alert("status" + xmlHttpRequest.status);
-		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 0) { 
+		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
 			alert("200 running");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
 			alert(responseText);
