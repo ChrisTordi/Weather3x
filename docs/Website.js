@@ -6,7 +6,7 @@
  */
 
 var api_base_url = 'http://thacker.mathcs.carleton.edu:5136/';
-alert("hello");
+
 
 /* Takes values from search bars in city search page, forms correct api query
  * Calls getStateCityCallback and passes JSON response to query
@@ -38,6 +38,7 @@ function onGetCityButton() {
 	xmlHttpRequest.open('get', url);
 
 	xmlHttpRequest.onreadystatechange = function() {
+		alert("readystate");
 		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
 			alert("200 running");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
@@ -74,8 +75,11 @@ function onGetStateButton() {
 	xmlHttpRequest.open('get', url);
 
 	xmlHttpRequest.onreadystatechange = function() {
+		alert("readystate");
 		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
+			alert("if statement succeded");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
+			alert("responsetext: " + responseText);
 			if (responseText == ',,,,') {
 				alert("The state '" + state + "' was not found.");
 				return;
@@ -200,6 +204,7 @@ function getCompareCallback(responseText) {
  * Displays table on city or state page depending on what function calls it
 */
 function getStateCityCallback(responseText) {
+	alert("callback works");
 	alert(responseText);
 	var statesList = responseText;
 
