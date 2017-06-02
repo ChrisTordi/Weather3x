@@ -6,11 +6,13 @@
  */
 
 var api_base_url = 'http://thacker.mathcs.carleton.edu:5136/';
+alert("hello");
 
 /* Takes values from search bars in city search page, forms correct api query
  * Calls getStateCityCallback and passes JSON response to query
  */
 function onGetCityButton() {
+	alert("hello city");
 	var state = document.getElementById("stateS").value;
 	var city  = document.getElementById("cityS").value;
 
@@ -53,6 +55,7 @@ function onGetCityButton() {
  * Calls getStateCityCallback and passes JSON response to query
  */
 function onGetStateButton() {
+	alert("hello state");
 	var state = document.getElementById("stateSearch").value;
 	if (state.length != 2) {
 		alert("Please use state abbreviations");
@@ -64,6 +67,7 @@ function onGetStateButton() {
 		return;
 	}
 	var url = api_base_url + state;
+	alert(url);
 	xmlHttpRequest = new XMLHttpRequest();
 	xmlHttpRequest.open('get', url);
 
