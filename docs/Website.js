@@ -30,6 +30,7 @@ function onGetCityButton() {
 	}
 
 	var url = api_base_url + state + '/' + city;
+	alert(url);
 
 	xmlHttpRequest = new XMLHttpRequest();
 	xmlHttpRequest.open('get', url);
@@ -193,6 +194,7 @@ function getCompareCallback(responseText) {
  * Displays table on city or state page depending on what function calls it
 */
 function getStateCityCallback(responseText) {
+	alert(responseText);
 	var statesList = responseText;
 
 	var tableBody = '';
