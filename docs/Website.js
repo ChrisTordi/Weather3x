@@ -38,7 +38,8 @@ function onGetCityButton() {
 	xmlHttpRequest.open('get', url);
 
 	xmlHttpRequest.onreadystatechange = function() {
-		alert("readystate");
+		alert("readystate" + xmlHttpRequest.readyState);
+		alert("status" + xmlHttpRequest.status);
 		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
 			alert("200 running");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
@@ -76,6 +77,8 @@ function onGetStateButton() {
 
 	xmlHttpRequest.onreadystatechange = function() {
 		alert("readystate");
+		alert("readystate" + xmlHttpRequest.readyState);
+		alert("status" + xmlHttpRequest.status);
 		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
 			alert("if statement succeded");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
