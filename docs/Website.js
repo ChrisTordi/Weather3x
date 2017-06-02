@@ -39,7 +39,9 @@ function onGetCityButton() {
 
 	xmlHttpRequest.onreadystatechange = function() {
 		if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) { 
+			alert("200 running");
 			var responseText = JSON.parse(xmlHttpRequest.responseText);
+			alert(responseText);
 			if (responseText == ',,,,') {
 				alert("The city '" + city + "' was not found.");
 				return;
