@@ -5,7 +5,7 @@
  *  Javascript program with AJAX that runs front-end functions
  */
 
-var api_base_url = 'http://thacker.mathcs.carleton.edu:5136/';
+var api_base_url = 'https://thacker.mathcs.carleton.edu:5136/';
 
 
 /* Takes values from search bars in city search page, forms correct api query
