@@ -5,15 +5,15 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='websiteStyles.css') }}" />
-		<link rel="icon" type="image/jpg" href="{{ url_for('static', filename='jeff_square_head.jpg') }}">
-		<link type="image/png" href="{{ url_for('static', filename='compare.png') }}">
-		<link type="image/png" href="{{ url_for('static', filename='state.png') }}">
-		<link type="image/jpg" href="{{ url_for('static', filename='city.jpg') }}">
-		<link type="image/jpg" href="{{ url_for('static', filename='happyhome.jpg') }}">
+		<link rel="stylesheet" type="text/css" href="websiteStyles.css" />
+		<link rel="icon" type="image/jpg" href="jeff_square_head.jpg">
+		<link type="image/png" href="compare.png">
+		<link type="image/png" href="state.png">
+		<link type="image/jpg" href="city.jpg">
+		<link type="image/jpg" href="happyhome.jpg">
 		
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjbWfUeCBmVzvJT4Na9cCPAWnB7XllbNo&callback=initMap"></script>
-		<script type="text/javascript" src="../Static/Website.js"></script>
+		<script type="text/javascript" src="Website.js"></script>
 
 
 	</head>
@@ -24,13 +24,13 @@
 		  <li><a id="city" onclick="onCityNav()" href="https://shadowantelope.github.io/Weather3x/City.html">City</a></li>
 		  <li><a id="compare" onclick="onCompareNav()" href="https://shadowantelope.github.io/Weather3x/Compare.html">Compare</a></li>
 		  <li><a id="find_city" onclick="onFindCityNav()" href="https://shadowantelope.github.io/Weather3x/Find.html">Find City</a></li>
-		  <li style="float: right"><a id="about" onclick="onAboutNav()" href="https://shadowantelope.github.io/Weather3x/about">About</a></li>
+		  <li style="float: right"><a id="about" onclick="onAboutNav()" href="https://shadowantelope.github.io/Weather3x/About.html">About</a></li>
 		</ul>
 		<div id="page">
 			<h1 class="title" style="font-size: 300%">Weather3x</h1>
 			<div class="container">
 				<h2 class="title"> Find </h3>
-  				<img src="Static/happyhome.jpg" class="image">
+  				<img src="happyhome.jpg" class="image">
  			    <div class="middle">
     				<li class="active" onclick="onFindCityNav()"> 
     					<a href="https://shadowantelope.github.io/Weather3x/Find.html"> Find </a>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="container">
 				<h2 class="title"> Compare </h3>
-  				<img src="Static/compare.png" class="image">
+  				<img src="compare.png" class="image">
  			    <div class="middle">
     				<li class="active" onclick="onCompareNav()">
     					<a href="https://shadowantelope.github.io/Weather3x/Compare.html"> Compare </a>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="container">
 				<h2 class="title"> Search a City</h3>
-  				<img src="Static/city.jpg" class="image">
+  				<img src="city.jpg" class="image">
  			    <div class="middle">
     				<li class="active" onclick="onCityNav()"> 
     				<a href="https://shadowantelope.github.io/Weather3x/City.html">City </a>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="container">
 				<h2 class="title"> Search a State </h3>
-  				<img src="Static/state.png" class="image">
+  				<img src="state.png" class="image">
  			    <div class="middle">
     				<li class="active" onclick="onStateNav()">
     				<a href="https://shadowantelope.github.io/Weather3x/State.html">State</a> 

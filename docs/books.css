@@ -1,0 +1,72 @@
+/*
+    books.css
+    Jeff Ondich, 27 April 2016
+
+    Styles for the "books and authors" webapp sample
+    for CS 257, Spring 2016. 
+*/
+
+/*Jeffe's Shit*/
+@import url('jeff-course-styles.css');
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+#results_table {
+    height:150px;  
+    overflow: auto;
+}
+
+#found_results_table {
+    height: 300px;
+    overflow: auto;
+}
+
+/*Our Shit*/
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+	margin: 0ex, 0ex, 0ex, 0ex;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+body {
+	margin: 0;
+}
+
+#page {
+	margin-top: 60px;
+}
